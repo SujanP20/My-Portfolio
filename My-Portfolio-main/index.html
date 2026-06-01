@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sujan.p | Software Developer</title>
+
+    <!-- SEO Meta -->
+    <meta name="description"
+        content="Portfolio of Sujan.p — Software Developer and Computer Science Engineering student proficient in Python, Java, and full-stack development.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero-wrapper" id="home">
+        <div class="hero-inner">
+            <!-- Top Left Menu Button -->
+            <div class="header-left">
+                <button class="menu-btn">
+                    <span class="menu-text">MENU</span>
+                </button>
+            </div>
+
+            <!-- Top Right Title -->
+            <div class="header-right">
+                <h1 class="pixel-title">SUJAN<br>P</h1>
+                <p class="pixel-subtitle">Software Developer</p>
+            </div>
+
+            <!-- Side Menu Overlay -->
+            <div class="side-menu">
+                <div class="side-menu-inner">
+                    <button class="close-menu-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                    <nav class="side-nav-links">
+                        <a href="#home" class="side-nav-item">Home</a>
+                        <a href="#about" class="side-nav-item">About</a>
+                        <a href="#skills" class="side-nav-item">Skills</a>
+                        <a href="#projects" class="side-nav-item">Projects</a>
+                        <a href="#education" class="side-nav-item">Education</a>
+                        <a href="#contact" class="side-nav-item">Contact</a>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="background-wrapper">
+                <div class="bg-overlay"></div>
+            </div>
+            <section class="hero">
+                <div class="flowing-cards-perspective">
+                    <div class="flowing-cards-rotation">
+                        <div class="flowing-cards-track">
+                            <!-- Group 1 -->
+                            <div class="card-group">
+                                <div class="flowing-card"><img
+                                        src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=600&auto=format&fit=crop"
+                                        alt="Code"></div>
+                                <div class="flowing-card"><img
+                                        src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=600&auto=format&fit=crop"
+                                        alt="Data"></div>
+                                <div class="flowing-card"><img
+                                        src="https://images.unsplash.com/photo-1518932945647-7a1c969f8be2?q=80&w=600&auto=format&fit=crop"
+                                        alt="AI"></div>
+                                <div class="flowing-card"><img
+                                        src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=600&auto=format&fit=crop"
+                                        alt="Development"></div>
+                                <div class="flowing-card"><img
+                                        src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=600&auto=format&fit=crop"
+                                        alt="Tech"></div>
+                            </div>
+                            <!-- Group 2 (Duplicate for infinite scroll) -->
+                            <div class="card-group">
+                                <div class="flowing-card"><img
+                                        src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=600&auto=format&fit=crop"
+                                        alt="Code"></div>
+                                <div class="flowing-card"><img
+                                        src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=600&auto=format&fit=crop"
+                                        alt="Data"></div>
+                                <div class="flowing-card"><img
+                                        src="https://images.unsplash.com/photo-1518932945647-7a1c969f8be2?q=80&w=600&auto=format&fit=crop"
+                                        alt="AI"></div>
+                                <div class="flowing-card"><img
+                                        src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=600&auto=format&fit=crop"
+                                        alt="Development"></div>
+                                <div class="flowing-card"><img
+                                        src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=600&auto=format&fit=crop"
+                                        alt="Tech"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- Showreel Section / Intro -->
+    <section class="showreel-section" id="showreel">
+        <div class="showreel-container">
+            <h2 class="showreel-text">PORTFOLIO</h2>
+            <div class="video-wrapper">
+                <div class="video-inner">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1600&auto=format&fit=crop"
+                        class="video-cover" alt="Developer Workspace">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Marquee Section -->
+    <section class="brands-section">
+        <div class="brands-container">
+            <h3 class="brands-title">Technologies & Tools I Work With</h3>
+            <div class="brands-marquee-wrapper">
+                <div class="brands-marquee-track">
+                    <div class="brand-logo"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                            alt="Python"></div>
+                    <div class="brand-logo"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                    </div>
+                    <div class="brand-logo"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                            alt="JavaScript"></div>
+                    <div class="brand-logo"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                            alt="HTML5"></div>
+                    <div class="brand-logo"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                    </div>
+                    <div class="brand-logo"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                            alt="MySQL"></div>
+                    <div class="brand-logo"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"
+                            alt="Flask"></div>
+                    <div class="brand-logo"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"
+                            alt="TensorFlow"></div>
+                    <div class="brand-logo"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                    </div>
+                    <div class="brand-logo"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+                            alt="Linux"></div>
+                    <!-- Duplicated for infinite scroll -->
+                    <div class="brand-logo"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                            alt="Python"></div>
+                    <div class="brand-logo"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                    </div>
+                    <div class="brand-logo"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                            alt="JavaScript"></div>
+                    <div class="brand-logo"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                            alt="HTML5"></div>
+                    <div class="brand-logo"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                    </div>
+                    <div class="brand-logo"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                            alt="MySQL"></div>
+                    <div class="brand-logo"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"
+                            alt="Flask"></div>
+                    <div class="brand-logo"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"
+                            alt="TensorFlow"></div>
+                    <div class="brand-logo"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                    </div>
+                    <div class="brand-logo"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+                            alt="Linux"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="portfolio-section" id="projects">
+        <div class="portfolio-header">
+            <h2 class="portfolio-title">Featured Projects</h2>
+            <a href="https://github.com/SujanP20" target="_blank" class="portfolio-btn">View All on GitHub</a>
+        </div>
+        <div class="portfolio-horizontal-wrapper">
+            <div class="portfolio-track">
+                <div class="portfolio-item" data-project="skillswap">
+                    <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=1200&auto=format&fit=crop"
+                        alt="Skill Swap" class="portfolio-img">
+                    <div class="portfolio-info">
+                        <h3 class="portfolio-name">Skill Swap</h3>
+                        <p class="portfolio-sub">Full-Stack Web Application</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-project="retinopathy">
+                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=1200&auto=format&fit=crop"
+                        alt="Diabetic Retinopathy AI" class="portfolio-img">
+                    <div class="portfolio-info">
+                        <h3 class="portfolio-name">Diabetic Retinopathy AI</h3>
+                        <p class="portfolio-sub">Deep Learning & Explainable AI</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-project="data">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop"
+                        alt="Data Analysis" class="portfolio-img">
+                    <div class="portfolio-info">
+                        <h3 class="portfolio-name">Data-Driven Insights</h3>
+                        <p class="portfolio-sub">Python, Pandas, NumPy</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-project="api">
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200&auto=format&fit=crop"
+                        alt="API Development" class="portfolio-img">
+                    <div class="portfolio-info">
+                        <h3 class="portfolio-name">RESTful APIs</h3>
+                        <p class="portfolio-sub">Flask Backend Development</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Cursor for Project Hover -->
+    <div class="custom-cursor">
+        <span class="cursor-text">VIEW<br>PROJECT</span>
+    </div>
+
+    <!-- Project Detail Modal -->
+    <div class="project-modal" id="projectModal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close-btn">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="modal-header">
+                <img id="modalImage" src="" alt="" class="modal-cover-img">
+                <div class="modal-header-overlay"></div>
+                <div class="modal-title-area">
+                    <h2 id="modalTitle" class="modal-project-title"></h2>
+                    <p id="modalSubtitle" class="modal-project-subtitle"></p>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-tech">
+                    <h4 class="modal-section-label">TECH STACK</h4>
+                    <div id="modalTech" class="modal-tech-tags"></div>
+                </div>
+                <div class="modal-highlights">
+                    <h4 class="modal-section-label">HIGHLIGHTS</h4>
+                    <ul id="modalHighlights" class="modal-highlight-list"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Technical Skills Section -->
+    <section class="services-section" id="skills">
+        <div class="grid-lines">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="services-container">
+            <div class="services-left">
+                <h2 class="services-title">Technical Skills<br>& Expertise</h2>
+            </div>
+            <div class="services-right">
+                <div class="service-card"
+                    data-image="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop">
+                    <h3 class="service-name">Programming Languages</h3>
+                    <p class="service-desc">Proficient in Python, SQL, C++, HTML, and JavaScript. Strong foundation in
+                        object-oriented programming, data structures, and algorithm design for solving complex problems
+                        efficiently.</p>
+                    <a href="https://github.com/SujanP20" target="_blank" class="service-link"><span>VIEW ON
+                            GITHUB</span> <span class="arrow-circle"><svg width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg></span></a>
+                </div>
+                <div class="service-card"
+                    data-image="https://images.unsplash.com/photo-1518932945647-7a1c969f8be2?q=80&w=800&auto=format&fit=crop">
+                    <h3 class="service-name">AI & Machine Learning</h3>
+                    <p class="service-desc">Hands-on experience with TensorFlow, Keras, OpenCV, and Scikit-learn. Built
+                        deep learning models (CNN) for medical image analysis and applied Explainable AI techniques like
+                        Grad-CAM, LIME, and SHAP.</p>
+                    <a href="#projects" class="service-link"><span>SEE PROJECTS</span> <span class="arrow-circle"><svg
+                                width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg></span></a>
+                </div>
+                <div class="service-card"
+                    data-image="https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=800&auto=format&fit=crop">
+                    <h3 class="service-name">Full-Stack Development</h3>
+                    <p class="service-desc">Built full-stack web applications using HTML, CSS, JavaScript for the
+                        frontend and Flask (Python) for the backend. Experienced with PostgreSQL, RESTful APIs,
+                        real-time chat, and video conferencing integrations.</p>
+                    <a href="#projects" class="service-link"><span>SEE PROJECTS</span> <span class="arrow-circle"><svg
+                                width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg></span></a>
+                </div>
+            </div>
+        </div>
+        <div class="hover-reveal-img"></div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="industries-section" id="education">
+        <h2 class="industries-title">Education</h2>
+        <div class="industries-grid">
+            <div class="industry-card card-wide"
+                data-bg="https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1600&auto=format&fit=crop">
+                <div class="card-content">
+                    <h3 class="industry-name">Rajarajeshwari College of Engineering, <span
+                            class="highlight">Bangalore</span></h3>
+                    <p class="industry-desc">Bachelor of Engineering in Computer Science • CGPA: 7.8/10.0 • Graduation:
+                        Jun 2026</p>
+                </div>
+            </div>
+            <div class="industry-card card-square"
+                data-bg="https://images.unsplash.com/photo-1580582932707-520aed937b7b?q=80&w=800&auto=format&fit=crop">
+                <div class="card-content">
+                    <h3 class="industry-name">Deeksha PU College</h3>
+                    <p class="industry-desc">PCMB (Pre-University) • 75% • Completed</p>
+                </div>
+            </div>
+            <div class="industry-card card-tall" id="certCard"
+                data-bg="https://images.unsplash.com/photo-1589330694653-ded6df03f754?q=80&w=800&auto=format&fit=crop">
+                <div class="card-content">
+                    <h3 class="industry-name">Certifications <span class="cert-click-hint">↗ Click to view</span></h3>
+                    <p class="industry-desc">• Data Analytics Essentials (Cisco)<br>• Data Science with Python (Cisco)<br>• Skyscanner Analytics Job Simulation (Forage)</p>
+                </div>
+            </div>
+            <div class="industry-card card-square"
+                data-bg="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=800&auto=format&fit=crop">
+                <div class="card-content">
+                    <h3 class="industry-name">Cordial High School</h3>
+                    <p class="industry-desc">SSLC • 84% • Completed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Certificate Images Modal -->
+    <div class="cert-modal" id="certModal">
+        <div class="cert-modal-backdrop"></div>
+        <div class="cert-modal-content">
+            <button class="cert-modal-close">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <h2 class="cert-modal-title">My Certifications</h2>
+            <div class="cert-modal-grid">
+                <div class="cert-modal-item">
+                    <img src="certificates/dataanalytics-update.jpg" alt="Data Analytics Essentials - Cisco Networking Academy"
+                        class="cert-modal-img">
+                    <p class="cert-modal-label">Data Analytics Essentials — Cisco Networking Academy</p>
+                </div>
+                <div class="cert-modal-item">
+                    <img src="certificates/datascience-python.jpg" alt="Data Science Essentials with Python - Cisco Networking Academy" class="cert-modal-img">
+                    <p class="cert-modal-label">Data Science Essentials with Python — Cisco Networking Academy</p>
+                </div>
+                <div class="cert-modal-item">
+                    <img src="certificates/skyscanner-cert.jpg" alt="Skyscanner Job Simulation" class="cert-modal-img">
+                    <p class="cert-modal-label">Skyscanner Data Analytics Job Simulation — Forage</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Me Section -->
+    <section class="about-agency-section" id="about">
+        <div class="about-container">
+            <div class="about-left">
+                <h2 class="about-heading">About Me</h2>
+                <a href="mailto:sujan.p4444@gmail.com" class="about-button">
+                    <div class="button-bg"></div>
+                    <span class="button-text">Get In Touch</span>
+                </a>
+            </div>
+            <div class="about-right">
+                <div class="about-text-content">
+                    <h3 class="about-subheadline">
+                        <span class="text-dim">Highly motivated and detail-oriented fresher with a strong foundation
+                            in</span> software development and problem solving. <span class="text-dim">Proficient in
+                            Java, DBMS and Python programming, with hands-on experience in data-driven projects using
+                            Python.</span>
+                    </h3>
+                    <p class="about-paragraph">A quick learner with strong communication and leadership skills, eager to
+                        contribute meaningfully to tech-driven teams. Passionate about building AI-powered solutions and
+                        full-stack web applications.</p>
+                </div>
+                <div class="about-stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-bg-number">2<span class="plus">+</span></div>
+                        <h4 class="stat-title">MAJOR PROJECTS</h4>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-bg-number">4<span class="plus">+</span></div>
+                        <h4 class="stat-title">CERTIFICATIONS</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact / Soft Skills Section -->
+    <section class="blogs-section" id="contact">
+        <div class="blogs-container">
+            <h2 class="blogs-title">Let's Connect</h2>
+            <div class="blogs-grid">
+                <div class="blog-card">
+                    <div class="blog-img-wrapper contact-icon-wrapper"
+                        style="background: linear-gradient(135deg, #EA4335, #FBBC05, #34A853, #4285F4);">
+                        <svg class="contact-icon" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                        </svg>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-category">EMAIL</div>
+                        <h3 class="blog-post-title"><a href="mailto:sujan.p4444@gmail.com"
+                                style="color: inherit;">sujan.p4444@gmail.com</a></h3>
+                        <div class="blog-meta"><span>Available for opportunities</span></div>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-img-wrapper contact-icon-wrapper" style="background: #0A66C2;">
+                        <svg class="contact-icon" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+                        </svg>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-category">LINKEDIN</div>
+                        <h3 class="blog-post-title"><a href="https://www.linkedin.com/in/sujan--p"
+                                target="_blank" style="color: inherit;">linkedin.com/in/sujan--p</a></h3>
+                        <div class="blog-meta"><span>Professional Network</span></div>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-img-wrapper contact-icon-wrapper" style="background: #181717;">
+                        <svg class="contact-icon" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
+                        </svg>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-category">GITHUB</div>
+                        <h3 class="blog-post-title"><a href="https://github.com/SujanP20" target="_blank"
+                                style="color: inherit;">github.com/SujanP20</a></h3>
+                        <div class="blog-meta"><span>Open Source & Projects</span></div>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-img-wrapper contact-icon-wrapper"
+                        style="background: linear-gradient(135deg, #25D366, #128C7E);">
+                        <svg class="contact-icon" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                        </svg>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-category">PHONE</div>
+                        <h3 class="blog-post-title"><a href="tel:+919141872725"
+                                style="color: inherit;">+91-9141872725</a></h3>
+                        <div class="blog-meta"><span>Sujan.p</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Marquee Section -->
+    <section class="marquee-section">
+        <div class="marquee-container">
+            <div class="marquee-track">
+                <div class="marquee-group">
+                    <div class="marquee-item"><span>Python</span></div>
+                    <div class="marquee-separator"></div>
+                    <div class="marquee-item"><span>JavaScript</span></div>
+                    <div class="marquee-separator"></div>
+                    <div class="marquee-item"><span>SQL</span></div>
+                    <div class="marquee-separator"></div>
+                    <div class="marquee-item"><span>C++</span></div>
+                    <div class="marquee-separator"></div>
+                    <div class="marquee-item"><span>Flask</span></div>
+                    <div class="marquee-separator"></div>
+                    <div class="marquee-item"><span>TensorFlow</span></div>
+                    <div class="marquee-separator"></div>
+                    <div class="marquee-item"><span>HTML</span></div>
+                    <div class="marquee-separator"></div>
+                    <div class="marquee-item"><span>CSS</span></div>
+                    <div class="marquee-separator"></div>
+                </div>
+                <div class="marquee-group">
+                    <div class="marquee-item"><span>Python</span></div>
+                    <div class="marquee-separator"></div>
+                    <div class="marquee-item"><span>JavaScript</span></div>
+                    <div class="marquee-separator"></div>
+                    <div class="marquee-item"><span>SQL</span></div>
+                    <div class="marquee-separator"></div>
+                    <div class="marquee-item"><span>C++</span></div>
+                    <div class="marquee-separator"></div>
+                    <div class="marquee-item"><span>Flask</span></div>
+                    <div class="marquee-separator"></div>
+                    <div class="marquee-item"><span>TensorFlow</span></div>
+                    <div class="marquee-separator"></div>
+                    <div class="marquee-item"><span>HTML</span></div>
+                    <div class="marquee-separator"></div>
+                    <div class="marquee-item"><span>CSS</span></div>
+                    <div class="marquee-separator"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="blog-cursor"><span class="blog-cursor-text">VIEW<br>LINK</span></div>
+
+</body>
+
+</html>
